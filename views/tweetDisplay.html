@@ -1,0 +1,20 @@
+<div id="layoutContainer" ng-cloak>
+    <div layout="row">
+        <div flex="40" flex-offset="10" ng-controller="trumpController">
+            <h1>TRUMP TWEETS</h1>
+            <div class="box" flex ng-repeat="tweet in trumpTweets"
+              ng-style="{'background': 'url({{tweet.user.profile_background_image_url}})'}"><img flex ng-src="{{tweet.user.profile_image_url}}">
+                    <li flex >CONTENT: {{tweet.text}}</li>
+            </div>
+        </div>
+        <div flex="40" ng-controller="hillController">
+            <h1>Hill TWEETS</h1>
+            <div class="box" flex ng-repeat="tweet in hillTweets"
+              ng-style="{'background': 'url({{tweet.user.profile_background_image_url}})'}"><img flex ng-src="{{tweet.user.profile_image_url}}">
+                    <li flex>CONTENT: {{tweet.text}}</li>
+            </div>
+        </div>
+    </div>
+</div>
+
+
