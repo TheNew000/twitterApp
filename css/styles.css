@@ -52,11 +52,23 @@
 .box {
   color: white;
   padding: 10px;
-  text-align: center;
   border-style: inset;
 }
 
-/* line 13, ../compass/sass/styles.scss */
+/* line 12, ../compass/sass/styles.scss */
+.box li {
+  text-align: center;
+}
+
+/* line 16, ../compass/sass/styles.scss */
+.box img {
+  width: 14%;
+  -webkit-box-shadow: 5px 5px 40px 5px black;
+  -moz-box-shadow: 5px 5px 40px 5px black;
+  box-shadow: 5px 5px 40px 5px black;
+}
+
+/* line 23, ../compass/sass/styles.scss */
 html {
   background-image: url("../../trumpbrannagin.jpg");
   background-repeat: no-repeat;
@@ -64,7 +76,13 @@ html {
   background-size: 100%;
 }
 
-/* line 20, ../compass/sass/styles.scss */
+/* line 30, ../compass/sass/styles.scss */
 body {
   background: transparent;
+}
+
+/* line 34, ../compass/sass/styles.scss */
+.box .proPic {
+  border-radius: 5px;
+  text-align: left;
 }
